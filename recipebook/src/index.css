@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,500;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #ffd7c7;
+
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    
+}
+.heading h3{
+    color:#030e12;
+    font-size: 48px;
+    font-weight:900;
+    letter-spacing: 1px;
+    padding-top:2rem;
+    margin: 1rem;
+}
+.search-bar{
+    margin: 2rem 0 0 0;
+    width:400px;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+}
+.container{
+    width: 80%;
+    margin: 14px auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    grid-gap: 2rem;
+}
+.card{
+    width: 180px;
+    border-radius: 1rem;
+    background-color: #030e12;
+    padding: 5px;
+}
+.card img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+}
+.card h3{
+    color:white;
+    font-size: 18px;
+}
+.content img{
+    margin: auto;
+    display: block;
+    height: 25rem;
+    padding-top: 1rem;
+
+    
+}  
+.content .inner-content{
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px 5px rgba(0,0,0,05);
+}
+.recipe-details{
+    width: 70%;
+    margin:2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ingredients,.instructions{
+    flex-basis: 50%;
+    text-align: justify;
+}
+.ingredients h4{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.video{
+    width: 80%;
+    margin: 3rem auto;
+}
+.indexContainer{
+    display: flex;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+
+
+}
+.numBox {
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 2px 5px 2px 5px;
+    border-radius: 2rem;
+    
+}
+
+.numBox:hover {
+    background-color: lightslategray;
+    transform: scale(1.3);
+    cursor: pointer;
+
+  }
+
+  .numBox > h3 {
+    padding-top: 10px;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+  }  
+
+  h2 {
+    vertical-align: center;
+    text-align: center;
+  }
+  
+  html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #f46b45, #eea849);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+    padding-bottom: 8.5rem;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 7rem;
+
+    
+  }
+  
+  .menu > li {
+    margin: 0 0.4rem;
+    overflow: hidden;
+    font-size: 1.25rem;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 800px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+
+  .granny {
+    padding-top: 7.5rem;
+    margin-top: 0.3rem ;
+    height: 270px;
+    
+  }
+
+  div.main {
+    padding-top:0;
+  }
+
+  .heading {
+padding-top: 1rem;
+  }
+
+.sitetitle {
+    padding-bottom: 4rem;
+    
+}
+
+
+.footer-nav {
+ 
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #f46b45, #eea849);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 10px;
+    padding: 1rem;
+    padding-bottom: 8.5rem;
+    margin-top: auto;
+
+}
+
+.fnlist {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bottom {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    }
+
+.menu-bottom > li {
+        margin: 1.8rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+
+.menu li a {
+    text-decoration: none;
+    background-color: unset;
+    color: white;
+}
+
+.about-section {
+    text-align: center;
+    color: black;
+    
+}
+
+.menu-bottom li a {
+    text-decoration: none;
+    background-color: unset;
+    color: white;
+}
+
+.cr {
+   margin-top: 15rem;
+   text-align: center;
+}
+
+.signup_title{
+  text-align: center;
+  padding-bottom: 30px;
+  color: #1266f1;
+}
+
+
+.form-outline input[type=text],
+.form-outline input[type=email],
+.form-outline input[type=select],
+.form-outline textarea,
+.form-outline input[type=password] {
+    border-bottom: 1px solid #f4f4f4;
+}
+select#category,
+textarea#form4Example2,
+input#form4Example3 {
+ border-bottom: 1px solid #f4f4f4;
+}
+
+.nav-link {
+  padding: 0.1rem;
+}
