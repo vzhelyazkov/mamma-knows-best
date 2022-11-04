@@ -1,1 +1,2 @@
-# FinalProjectStrive
+# FinalProject
+ Strive School Final
