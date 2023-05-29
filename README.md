@@ -1,2 +1,1 @@
-# FinalProject
- Strive School Final
+
